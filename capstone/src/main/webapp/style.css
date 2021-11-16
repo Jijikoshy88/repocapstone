@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+     background-color: lightblue;
+}
+
+
+form {
+    display: inline-block;
+}
+.bg
+{
+	width:60px;
+	height:60px;
+}
+.adm
+{
+	width:60px;
+	height:60px;
+	vertical-align: middle;
+}
+.box
+{
+	width:500px;
+	padding:100px;
+position  : absolute;
+	top:110%;
+	left:50%;
+	
+	
+	transform:translate(-50%,-50%);
+	background:hsla(120, 100%, 75%, 0.3);
+	text-align:center;
+ vertical-align: middle;
+  margin: auto;
+  
+  border: 3px solid green;
+  
+}
+.box h1
+{
+	color:Blue;
+	text-transform:uppercase;
+	font-weight:700;
+	
+}
+.box h2
+{
+	color:Red;
+	text-transform:uppercase;
+	font-weight:700;
+	
+}
+.menubox
+{
+color:Blue;
+
+	font-weight:700;
+}
+.navbar
+
+{
+color:White;
+
+	font-weight:700;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+

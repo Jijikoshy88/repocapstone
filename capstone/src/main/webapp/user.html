@@ -1,0 +1,184 @@
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="userstyle.css" rel="stylesheet">
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="search-filter.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+  <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+          
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+          
+        h1 {
+            color: green;
+        }
+    </style>
+  </head>
+
+<body>
+
+<style>
+.carousel-item
+{
+height:32rem;
+position:center;
+
+}
+.container
+{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+padding-bottom:50px;
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+</style>
+
+<div class="topnav">
+  <a class="active" href="#home">Food box</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+   <a href="viewfooditems.html">View Food items</a>
+  <div class="topnav-right">
+   <a href="newuser.html">NewUser</a>
+    <a href="viewfooditems.html">Sign in</a>
+    <a href="userlogout.html">Logout</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row searchFilter" >
+     <div class="col-sm-12" >
+      <div class="input-group" >
+       <input id="table_filter" type="text" class="form-control" aria-label="Text input with segmented button dropdown" >
+       <div class="input-group-btn" >
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="label-icon" >Category</span> <span class="caret" >&nbsp;</span></button>
+        <div class="dropdown-menu dropdown-menu-right" >
+           <ul class="category_filters" >
+            <li >
+             <input class="cat_type category-input" data-label="All" id="all" value="" name="radios" type="radio" onclick="location.href='search.jsp'" ><label for="Indian" >Indian</label>
+            </li>
+            <li >
+             <input type="radio" name="radios" id="Design" value="Design" ><label class="category-label" for="Arabic" >Arabic</label>
+            </li>
+            <li >
+             <input type="radio" name="radios" id="Marketing" value="Marketing" ><label class="category-label" for="Chinese" >Chinese</label>
+            </li>
+            <li >
+             <input type="radio" name="radios" id="Programming" value="Programming" ><label class="category-label" for="Mexican" >Mexican</label>
+            </li>
+            
+           </ul>
+        </div>
+        <button id="searchBtn" type="button" class="btn btn-secondary btn-search" ><span class="glyphicon glyphicon-search" >&nbsp;</span> <span class="label-icon" ><a type="button" href="ser.html">Search</a></span></button>
+       </div>
+      </div>
+     </div>
+  </div>
+</div>
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="h4.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Indian Cuisine</h5>
+        <p>Eat healthy.Think better . Indian cuisine consists of a variety of regional and traditional cuisines native to the Indian subcontinent. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="h2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Mexican Cuisine</h5>
+        <p>Authentic Mexican food is more than tacos and salsa. Check out our favorite Mexican dishes: churros, elote, barbacoa, posole and more. From drinks to dessert, there are so many Mexican food recipes to dive into!.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="h6.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Arabic Cuisine</h5>
+        <p>Arabic cuisine is a crucial aspect of any visit to the Middle East. The food is plentiful with so many different, delicious options to appeal to every palette. Traditionally, these are sharing dishes, which is great news as it gives visitors the opportunity to order as many as possible and try a bit of everything.</p>
+      </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
